@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Dispatcher" icon-name="standard:coaching">
+        <lightning-button label="New" slot="actions"></lightning-button>
+
+        <div>
+            <lightning-datatable
+                key-field="id"
+                data={data}
+                columns={columns}>
+            </lightning-datatable>
+        </div>
+        
+        <p slot="footer">Configurations can only be deleted from the Custom Metadata configuration page.</p>
+    </lightning-card>
+</template>
